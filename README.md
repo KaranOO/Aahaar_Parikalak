@@ -1,70 +1,138 @@
-# Getting Started with Create React App
+# Aahaar Parikalak
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aahaar Parikalak is a comprehensive meal tracking application designed to help users monitor their food intake, manage meals, and track nutritional information. The app provides an easy-to-use interface for adding, updating, and deleting food items, and calculates total calories consumed throughout the day. The data is saved in a MongoDB database and resets daily at midnight while retaining historical data.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add, update, and delete food items for different meals.
+- Calculate total calories for each meal.
+- Persist data in MongoDB.
+- Daily reset of food data at midnight.
+- Retain historical data for analysis.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js
+- MongoDB
 
-### `npm run build`
+### Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/aahaar-parikalak.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+   ```bash
+   cd aahaar-parikalak
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies for the frontend:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-### `npm run eject`
+4. Install dependencies for the backend:
+   ```bash
+   cd ../backend
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Start the MongoDB server:
+   ```bash
+   mongod
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. Start the backend server:
+   ```bash
+   node server.js
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+7. Start the frontend server:
+   ```bash
+   cd ../frontend
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Use the interface to add food items for different meals.
+3. The application will automatically calculate and display the total calories for each meal.
+4. Data is saved in MongoDB and will persist across page refreshes.
+5. At midnight, the food data will reset, but historical data is retained in the database.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## API Endpoints
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Fetch Meals
 
-### Code Splitting
+- **GET /api/meals**
+  - Fetch all meals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Add Meal
 
-### Analyzing the Bundle Size
+- **POST /api/meals**
+  - Add a new meal.
+  - Request Body: `{ title: String, calories: Number, mealType: String }`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Update Meal
 
-### Making a Progressive Web App
+- **PUT /api/meals/:id**
+  - Update an existing meal by ID.
+  - Request Body: `{ title: String, calories: Number, mealType: String }`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Delete Meal
 
-### Advanced Configuration
+- **DELETE /api/meals/:id**
+  - Delete a meal by ID.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure
 
-### Deployment
+```
+aahaar-parikalak/
+├── backend/
+│   ├── models/
+│   │   └── mealModel.js
+│   ├── routes/
+│   │   └── mealRoutes.js
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── Components/
+│   │   │   └── Data.jsx
+│   │   ├── App.js
+│   │   └── index.js
+│   └── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards and includes appropriate tests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any inquiries or issues, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+Thank you for using Aahaar Parikalak! We hope it helps you achieve your nutritional goals.
