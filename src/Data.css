@@ -1,0 +1,478 @@
+/* .meals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.meal-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-header h2 {
+  margin: 0;
+}
+
+.add-food-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.meal-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.meal-section button {
+  margin-left: 10px;
+}
+
+.add-food-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-food-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-food-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+/* CSS 3 */
+/* .meals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.meal-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.meal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.meal-info {
+  display: flex;
+  align-items: center;
+}
+
+.meal-calories {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.add-food-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.add-food-btn:hover {
+  background-color: #218838;
+}
+
+.meal-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-section button {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.meal-section button:hover {
+  background-color: #0056b3;
+}
+
+.add-food-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-food-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-food-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+/* Code 4*/
+/* .meals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.meal-section {
+  padding: 2px 20px;
+  border-radius: 8px;
+  background-color: #f1f1f1; /* Default background color */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+*/
+
+/* .meal-section.breakfast {
+  background-color: #f8d7da;
+}
+
+.meal-section.midMorning {
+  background-color: #d1ecf1;
+}
+
+.meal-section.lunch {
+  background-color: #c3e6cb;
+}
+
+.meal-section.midAfternoon {
+  background-color: #ffeeba;
+}
+
+.meal-section.eveningSnacks {
+  background-color: #d4edda;
+}
+
+.meal-section.dinner {
+  background-color: #d6d8d9;
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.meal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.meal-info {
+  display: flex;
+  align-items: center;
+}
+
+.meal-calories {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.add-food-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.add-food-btn:hover {
+  background-color: #218838;
+}
+
+.meal-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-section button {
+  margin-left: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.meal-section button:hover {
+  background-color: #0056b3;
+}
+
+.add-food-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-food-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-food-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+
+/* Code 5 icon exp */
+.meals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.meal-section {
+  padding: 2px 20px;
+  border-radius: 8px;
+  background-color: #f1f1f1; /* Default background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.meal-section.breakfast {
+  background-color: #f8d7da;
+}
+
+.meal-section.midMorning {
+  background-color: #d1ecf1;
+}
+
+.meal-section.lunch {
+  background-color: #c3e6cb;
+}
+
+.meal-section.midAfternoon {
+  background-color: #ffeeba;
+}
+
+.meal-section.eveningSnacks {
+  background-color: #d4edda;
+}
+
+.meal-section.dinner {
+  background-color: #d6d8d9;
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.meal-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  padding-top: 30px;
+  margin-bottom: 0px;
+}
+
+.meal-info {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.meal-calories {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.add-food-btn {
+  background-color: #744aff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.add-food-btn:hover {
+  background-color: #6a00ffad;
+}
+
+.meal-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meal-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.meal-section li .food-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.meal-section li i {
+  cursor: pointer;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.meal-section li i:hover {
+  color: #0056b3;
+}
+
+.add-food-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-food-form input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-food-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fa-plus{
+  margin-left: 8px;
+}
