@@ -41,32 +41,18 @@ Aahaar Parikalak is a comprehensive meal tracking application designed to help u
    ```
 
 3. Install dependencies for the frontend:
+   - Goto Aahar Parikalak master
    ```bash
-   cd frontend
    npm install
    ```
 
-4. Install dependencies for the backend:
+5. Install dependencies for the backend:
    ```bash
    cd ../backend
-   npm install
+   pip install Flask
+   pip install Flask-Cors
    ```
 
-5. Start the MongoDB server:
-   ```bash
-   mongod
-   ```
-
-6. Start the backend server:
-   ```bash
-   node server.js
-   ```
-
-7. Start the frontend server:
-   ```bash
-   cd ../frontend
-   npm start
-   ```
 
 ## Usage
 
